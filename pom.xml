@@ -49,7 +49,6 @@
         <maven.surefire.plugin.version>2.14</maven.surefire.plugin.version>
         <maven.failsafe.plugin.version>2.14</maven.failsafe.plugin.version>
         <maven.surefire.report.plugin.version>2.14</maven.surefire.report.plugin.version>
-        <maven.javadoc.plugin.version>2.9</maven.javadoc.plugin.version>
         <maven.dependency.plugin.version>2.7</maven.dependency.plugin.version>
         <maven.jgitflow.plugin.version>1.0-alpha27</maven.jgitflow.plugin.version>
     </properties>
@@ -282,14 +281,6 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-report-plugin</artifactId>
                 <version>${maven.surefire.report.plugin.version}</version>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-javadoc-plugin</artifactId>
-                <version>${maven.javadoc.plugin.version}</version>
-                <configuration>
-                    <aggregate>true</aggregate>
-                </configuration>
             </plugin>
         </plugins>
     </reporting>

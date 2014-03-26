@@ -12,7 +12,9 @@
 from	ubuntu:12.04
 run	echo "deb http://archive.ubuntu.com/ubuntu precise main universe" > /etc/apt/sources.list
 run	apt-get -y update
-run	apt-get -y install wget git redis-server supervisor openjdk-7-jdk
+run	apt-get -y install wget git redis-server supervisor openjdk-7-jdk spidermonkey-bin
+run     curl -L https://raw.githubusercontent.com/dominictarr/JSON.sh/master/JSON.sh > JSON.sh
+run     chmod 755 JSON.sh && mv JSON.sh /bin/
 run	wget -O - http://dl.bintray.com/vertx/downloads/vert.x-2.1RC2.tar.gz | tar --directory /usr/local/ --strip-components=1 -xz
 run	mkdir -p /var/log/supervisor
 add	./supervisord.conf /etc/supervisor/conf.d/supervisord.conf

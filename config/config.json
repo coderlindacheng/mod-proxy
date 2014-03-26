@@ -1,6 +1,5 @@
 {
     "server": {
-        "accessLog": "/var/log/mod-proxy/access.log",
         "port": 80,
         "workers": 10,
         "maxSockets": 100,
@@ -11,10 +10,10 @@
         "httpKeepAlive": false,
         "https": {
             "port": 443,
-            "key": "/etc/ssl/ssl.key",
-            "cert": "/etc/ssl/ssl.crt"
+            "KeyStore": "/path/to/your/keystore/server-keystore.jks", 
+            "KeyStorePassword": "password"
         }
     },
-    "redisHost": "127.0.0.1",
+    "redisHost": "localhost",
     "redisPort": 6379
 }
