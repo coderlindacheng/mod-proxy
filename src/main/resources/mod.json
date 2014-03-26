@@ -1,0 +1,11 @@
+{
+  "main":"io.github.arnos.httpproxy.Master",
+
+  "description":"A Proxy server for HTTP & WebSockets written in Vertx, dynamically configured using redis",
+  "licenses": ["MIT License"],
+  "author": "Arno Schulz",
+
+  "developers": ["Other Dev 1", "Other Dev 2"],
+  "keywords": ["HTTPS","HTTP", "WebSocket", "SSL", "Proxy"],
+  "homepage": "https://github.com/arnos/mod-proxy"
+}
